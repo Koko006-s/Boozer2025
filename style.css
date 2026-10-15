@@ -1,0 +1,11 @@
+:root{--bg:#0b0b0b;--card:#161616;--line:#3a2f12;--gold:#d4af37;--tx:#f3ead2;--mut:#9a8f70;--g:#2ecc71;--r:#e74c3c;--y:#f1c40f;--w:#bbb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px system-ui,"Segoe UI",Tahoma,sans-serif}
+h2,h3{color:var(--gold);margin:8px 0}button,input,select{font:inherit;color:var(--tx);background:#1d1d1d;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+button{cursor:pointer;min-height:44px}button:active{transform:scale(.97)}.gb{background:linear-gradient(135deg,#f5d76e,#b8901f);color:#111;font-weight:700;border:0}.rb{background:#5a1a1a;border-color:#8a2a2a}
+input,select{width:100%;margin:4px 0 8px}#nav{display:flex;gap:6px;overflow-x:auto;padding:8px;background:#111;border-bottom:1px solid var(--gold);position:sticky;top:0;z-index:5}#nav button{white-space:nowrap}#nav .on{background:var(--gold);color:#111;font-weight:700}
+main{padding:10px;max-width:1100px;margin:auto}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}.tb{padding:10px 4px;text-align:center;border-radius:12px;border:2px solid;background:var(--card);min-height:76px}
+.free{border-color:var(--g)}.busy{border-color:var(--r)}.pay{border-color:var(--y)}.res{border-color:var(--w)}.tb small{display:block;color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.row>*{flex:1}.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}.kp b{display:block;font-size:20px;color:var(--gold)}
+table{width:100%;border-collapse:collapse}td,th{padding:6px;border-bottom:1px solid var(--line);text-align:start}.tot{font-size:24px;color:var(--gold);font-weight:700}
+#m{display:none;position:fixed;inset:0;background:#000a;align-items:center;justify-content:center;z-index:9;padding:12px}.box{background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:14px;width:100%;max-width:420px;max-height:90vh;overflow:auto}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:6px}.chips{display:flex;gap:6px;overflow-x:auto;margin:6px 0}.mut{color:var(--mut)}@media print{#nav,button{display:none}}
